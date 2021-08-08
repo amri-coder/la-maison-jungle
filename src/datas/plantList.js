@@ -1,10 +1,10 @@
-import React from 'react'
 
 export const plantList = [
     {
         name: 'Monstera',
         category: 'Classique',
-        id: '1ed'
+        id: '1ed',
+        isBestSale: true
 
     },
     {
