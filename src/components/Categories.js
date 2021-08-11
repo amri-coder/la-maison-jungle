@@ -1,5 +1,4 @@
 import '../styles/Categories.css'
-import { plantList } from '../datas/plantList';
 
 function Categories({ setActiveCategory, categories, activeCategory }) {
     return (
