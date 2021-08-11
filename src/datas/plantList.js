@@ -1,79 +1,87 @@
-import monstera from '../assets/monstera.jpg';
+import monstera from '../assets/monstera.jpg'
+import lyrata from '../assets/lyrata.jpg'
+import pothos from '../assets/pothos.jpg'
+import succulent from '../assets/succulent.jpg'
+import olivier from '../assets/olivier.jpg'
+import basil from '../assets/basil.jpg'
+import mint from '../assets/mint.jpg'
+import calathea from '../assets/calathea.jpg'
+import cactus from '../assets/cactus.jpg'
+
 export const plantList = [
     {
-        name: 'Monstera',
-        category: 'Classique',
+        name: 'monstera',
+        category: 'classique',
         id: '1ed',
-        isBestSale: true,
         light: 2,
         water: 3,
         cover: monstera
-
     },
     {
-        name: 'Ficus lyrata',
-        category: 'Classique',
+        name: 'ficus lyrata',
+        category: 'classique',
         id: '2ab',
         light: 3,
         water: 1,
-        cover: monstera
-
+        cover: lyrata
     },
+
     {
-        name: 'Pothos argenté',
-        category: 'Classique',
+        name: 'pothos argenté',
+        category: 'classique',
         id: '3sd',
         light: 1,
         water: 2,
-        cover: monstera
+        cover: pothos
     },
     {
-        name: 'Yucca',
-        category: 'Classique',
+        name: 'calathea',
+        category: 'classique',
         id: '4kk',
-        light: 3,
-        water: 1,
-        cover: monstera
+        light: 2,
+        water: 3,
+        cover: calathea
     },
     {
-        name: 'Olivier',
-        category: 'Extérieur',
+        name: 'olivier',
+        category: 'extérieur',
         id: '5pl',
         light: 3,
         water: 1,
-        cover: monstera
+        cover: olivier
     },
+
     {
-        name: 'Géranium',
-        category: 'Extérieur',
-        id: '6uo',
-        light: 2,
-        water: 2,
-        cover: monstera
-    },
-    {
-        name: 'Basilique',
-        category: 'Extérieur',
-        id: '7ie',
-        isSpecialOffer: true,
-        light: 2,
-        water: 3,
-        cover: monstera
-    },
-    {
-        name: 'Aloe',
-        category: 'Plante grasse',
+        name: 'cactus',
+        category: 'plante grasse',
         id: '8fp',
         light: 2,
         water: 1,
-        cover: monstera
+        cover: cactus
     },
     {
-        name: 'Succulente',
-        category: 'Plante grasse',
+        name: 'basilique',
+        category: 'extérieur',
+        id: '7ie',
+        light: 2,
+        water: 3,
+        cover: basil
+    },
+    {
+        name: 'succulente',
+        category: 'plante grasse',
         id: '9vn',
         light: 2,
         water: 1,
-        cover: monstera
+        cover: succulent
+    },
+
+    {
+        name: 'menthe',
+        category: 'extérieur',
+        id: '6uo',
+        light: 2,
+        water: 2,
+        cover: mint
     }
 ]
