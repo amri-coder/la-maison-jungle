@@ -1,21 +1,22 @@
-import React from 'react'
+import '../styles/Categories.css'
+import { plantList } from '../datas/plantList';
 
-const Categories = () => {
+function Categories({ setActiveCategory, categories, activeCategory }) {
     return (
-        <div>
-
-            <label for="category">Choisir une catégorie</label>
-
-            <select name="category" id="category">
-                <option value="">--Veuillez choisir une option--</option>
-                <option value="dog">Dog</option>
-                <option value="cat">Cat</option>
-                <option value="hamster">Hamster</option>
-                <option value="parrot">Parrot</option>
-                <option value="spider">Spider</option>
-                <option value="goldfish">Goldfish</option>
+        <div className='lmj-categories'>
+            <select
+                value={activeCategory}
+                onChange={(e) => setActiveCategory(e.target.value)}
+                className='lmj-categories-select'
+            >
+                <option value=''>---</option>
+                {categories.map((cat) => (
+                    <option key={cat} value={cat}>
+                        {cat}
+                    </option>
+                ))}
             </select>
-
+            <button onClick={() => setActiveCategory('')}>Réinitialiser</button>
         </div>
     )
 }
