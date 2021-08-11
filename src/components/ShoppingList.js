@@ -4,6 +4,8 @@ import PlantItem from './PlantItem';
 import '../styles/ShoppingList.css';
 
 
+
+
 function ShoppingList({ cart, updateCart }) {
     const categories = plantList.reduce(
         (acc, elem) =>
