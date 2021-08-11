@@ -16,7 +16,7 @@ function Cart({ cart, updateCart }) {
     return isOpen ? (
         <div className='lmj-cart'>
             <button
-                className='lmj-cart-toggle-button'
+                className='lmj-cart-toggle-button btn btn-warning'
                 onClick={() => setIsOpen(false)}
             >
                 Fermer
@@ -32,7 +32,7 @@ function Cart({ cart, updateCart }) {
                         ))}
                     </ul>
                     <h3>Total :{total}€</h3>
-                    <button onClick={() => updateCart([])}>Vider le panier</button>
+                    <button onClick={() => updateCart([])} className='btn btn-outline-warning'>Vider le panier</button>
                 </div>
             ) : (
                 <div>Votre panier est vide</div>
